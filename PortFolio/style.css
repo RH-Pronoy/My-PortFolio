@@ -1,0 +1,428 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+
+
+body{
+    background: #080808;
+    color: #fff;
+}
+
+
+
+#header{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-image: url(WhatsApp\ Image\ 2025-01-14\ at\ 8.00-Photoroom.jpg);
+    background-position: center;
+}
+.container{
+    padding: 10px 10%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo{
+    width: 140px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+width: 100%;
+}
+.header-text{
+    margin-top: 15%;
+    font-size: 30px;
+}
+
+  
+.header-text h1{
+    margin-top: 20px;
+    font-size: 60px;
+}
+
+.header-text h1 span{
+    color: #ff004f;
+}
+
+#white-text {
+    color: white;
+  }
+  
+  #red-text {
+    color: red;
+  }
+  
+#about{
+    padding: 80px 0;
+    color: #ababab;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.aboutc1{
+    flex-basis: 35%;
+}
+.aboutc1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+.aboutc2{
+    flex-basis: 60%;
+}
+.subtitle{
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+.aboutc2 h1 span{
+    color: #ff004f;
+}
+.tabtitles{
+display: flex;
+margin: 20px 0 40px;
+color: #f5dbb9;
+}
+.tablinks{
+margin-right: 50px;
+font-size: 18px;
+font-weight: 500;
+cursor: pointer;
+position: relative;
+}
+.tablinks::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tablinks.activelinks::after{
+width: 50%;
+}
+
+.tabcontents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.tabcontents ul li span{
+   color: #83032c;
+   font-size: 14px;
+}
+
+
+.tabcontents{
+    display: none;
+}
+.tabcontents.active{
+    display: block;
+    }
+    
+#services h1 span{
+        color: #ff004f;
+    }
+
+#services{
+    padding: 30px 0;
+}
+
+.servicelist{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+
+}
+
+.servicelist div{
+    background: #262626;
+    padding: 40px;
+    font-size: 15px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+.servicelist div img{
+    margin-bottom: 10px;
+ }
+
+ .servicelist div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 10px;
+ }
+
+ .servicelist div a{
+    font-size: 12px;
+    margin-top: 20px;
+    text-decoration: none;
+    color:#fff;
+    display: inline-block;
+ }
+
+ .servicelist div:hover{
+    background: #7f0a2f;
+   transform: translateY(-10px);
+}
+
+
+#portfolio{
+    padding: 30px 0;
+}
+#portfolio h1{
+    text-align: right;
+}
+#portfolio h1 span{
+    color: #ff004f;
+}
+.worklist{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+
+}
+
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.work img{
+    border-radius: 10px;
+    width: 100%;
+    display: block;
+    background-color: #262626;
+    transition: 0.5s;
+}
+.layer {
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), #8e0933);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.layer a{
+    margin-top: 20px;
+    color: #8e0933;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #f5dbb9;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+.work:hover img{
+    transform: scale(1.1);
+}
+.work:hover .layer{
+   height: 100%;
+}
+.btn {
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.5s;
+}
+
+.btn:hover {
+    background: #ff004f;
+}
+
+
+/* General Styles */
+#contact {
+    padding: 50px 20px;
+   
+}
+
+#contact h1 span{
+    color: #ff004f;
+}
+#contact .container {
+    max-width: 1200px;
+    margin: 10px auto;
+}
+
+#contact .row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Contact Left Styling */
+.contact-left {
+    flex: 1;
+    max-width: 45%;
+    padding: 20px;
+}
+
+.contact-left {
+    font-size: 36px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.contact-left p {
+    font-size: 16px;
+    color: #f5dbb9;
+    line-height: 1.6;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-left p i {
+    font-size: 18px;
+    color: #ff004f;
+}
+
+.contact-left .social-icons {
+    margin-top: 20px;
+}
+
+.contact-left .social-icons a {
+    font-size: 20px;
+    color: #555;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-left .social-icons a:hover {
+    color: #ff004f;
+}
+
+/* Contact Right Styling */
+.contact-right {
+    flex: 1;
+    max-width: 45%;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.contact-right form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-right input,
+.contact-right textarea {
+    width: 100%;
+    padding: 15px;
+    border: 0px;
+    background: #262626;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    margin: 5px 0px;
+    color: #fff;
+}
+
+.contact-right input:focus,
+.contact-right textarea:focus {
+    border-color: #ff004f;
+}
+
+.contact-right textarea {
+    resize: none;
+}
+
+.contact-right .btn {
+    display: inline-block;
+    background: #600c0c;
+    color: #fff;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    border-color: #83032c;
+}
+
+.contact-right .btn:hover {
+    background: #e00045;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #contact .row {
+        flex-direction: column;
+    }
+
+    .contact-left,
+    .contact-right {
+        max-width: 100%;
+        flex: 1 1 100%;
+        text-align: center;
+    }
+
+    .contact-right {
+        margin-top: 20px;
+    }
+}
