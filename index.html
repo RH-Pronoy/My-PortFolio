@@ -12,14 +12,17 @@
         <div class="container">
           <nav>
             <img src="a-logo-with-the-text-pronoy-the-first-th_iyQfqM7hSHeRl-W7BMYCXw_O1DwcNFFSsayXxVhiLNbMA.jpeg" class="logo">
-            <ul>
-              <li><a href="#header">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#services">Services</a></li>
-              <li><a href="#portfolio">Portfolio</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
+            
+              <ul id="nav-menu">
+                  <li><a href="#header">Home</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#services">Services</a></li>
+                  <li><a href="#portfolio">Portfolio</a></li>
+                  <li><a href="#contact">Contact</a></li>
+              </ul>
+              <div class="menu-icon" id="menu-icon">☰</div>
           </nav>
+          
           <div class="header-text">
             <p>Assalamu Walaikum </p>
             <h1>I'm <br> <span id="white-text"></span> <span id="red-text"></span></h1>
@@ -229,6 +232,21 @@
 
     typeFirstPart(); // Start typing the first part
   });
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const menuIcon = document.getElementById("menu-icon");
+    const navMenu = document.getElementById("nav-menu");
+
+    menuIcon.addEventListener("click", function () {
+        navMenu.classList.toggle("active");
+        menuIcon.classList.toggle("active");
+
+        // Toggle between hamburger and close icon
+        menuIcon.innerHTML = navMenu.classList.contains("active") ? "&#10005;" : "&#9776;";
+    });
+});
+
+
 </script>
 
      
